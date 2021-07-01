@@ -1,0 +1,24 @@
+.donation {
+    margin: 0 25%;
+    height: 50%;
+    &__container {
+        display: flex;
+        height: 100%;
+        padding: 2%;
+        background-color: #2c2b33;
+        align-items: center;
+    }
+    &__img {
+        width: 80%;
+        margin: 0 8%;
+        border: 7px solid #83818e;
+    }
+    &__about a{
+        color: gold;
+        text-decoration: none;
+        font-weight: bold;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

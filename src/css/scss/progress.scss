@@ -1,0 +1,85 @@
+.progress {
+    margin: 4em 0 0 0;
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 4em;
+        & img {
+            border: 0.41em solid #777682;
+            box-shadow: 1px 0px 1px #000, -1px 0px 2px #000, 0px 1px 1px #000, -1px -1px 8px #000;
+        }
+    }
+    &__img{
+        &_two{
+            display: none;
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        &_case-name {
+            font-size: calc(24px + 16 * (100vw / 1280));
+            margin: 0 0 50px 0;
+        }
+        &_decription {
+            margin: 6px 0;
+        }
+        &_value {
+            display: flex;
+            align-items: center;
+            & p {
+                margin: 0 0 0 12px;
+            }
+        }
+    }
+    &__line {
+        height: 11px;
+        width: 512px;
+        border: 3px solid black;
+        border-radius: 32px;
+    }
+    .line-gradient {
+        background: linear-gradient(45deg, #ff6c27, #05b0db);
+        height: 100%;
+        width: 100%;
+        border-radius: 32px;
+    }
+    .gradient-filter {
+        height: 100%;
+        transform: translateY(-11px);
+        float: right;
+        border-radius: 0 12px 12px 0;
+        background-color: #1f1e23;
+    }
+}
+
+@media (max-width: 992px) {
+    .progress {
+        &__container {
+            width: inherit;
+            flex-direction: column;
+        }
+        &__info {
+            width: 100%;
+            align-items: center;
+            &_case-name{
+                font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280));
+                margin: 0 0 20px 0;
+            }
+            &_lines{
+                width: 50%;
+            }
+        }
+        &__img{
+            &_one{
+                display: none;
+            }
+            &_two{
+                width: 65% !important;
+                display: block;
+            }
+        }
+    }
+}

@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+html, body, #root{
+    margin: 0;
+    height: 100%;
+    background-color: #1f1e23;
+}
+
 .Main_Container{
-    margin: 3em;
+    color: #b9b9b9;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-    border-radius: 3.5rem;
-    background-color: brown;
+    justify-content: space-between;
 }

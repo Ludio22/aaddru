@@ -1,0 +1,60 @@
+.progress{
+    margin: 4em 0 0 0;
+}
+
+.progress__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 4em;
+}
+
+.progress__container img{
+    border: .41em solid #777682;
+    box-shadow: 1px 0px 1px #000, -1px 0px 2px #000, 0px 1px 1px #000, -1px -1px 8px #000;
+}
+
+.progress__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.progress__info_case-name{
+    font-size: 2.5em;
+    margin: 0 0 50px 0;
+}
+
+.progress__info_decription{
+    margin: 6px 0;
+}
+
+.progress__info_value{
+    display: flex;
+    align-items: center;
+}
+
+.progress__info_value p{
+    margin: 0 0 0 12px;
+}
+
+.progress__line {
+    height: 11px;
+    width: 512px;
+    border: 3px solid black;
+    border-radius: 32px;
+}
+
+.line-gradient {
+    background: linear-gradient(45deg, #ff6c27, #05b0db);
+    height: 100%;
+    width: 100%;
+    border-radius: 32px;
+}
+.gradient-filter{
+    height: 100%; 
+    transform: translateY(-11px);
+    float: right;
+    border-radius: 0 12px 12px 0;
+    background-color: #1f1e23;
+}

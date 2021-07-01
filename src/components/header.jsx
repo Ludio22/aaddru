@@ -1,16 +1,17 @@
+import React from 'react';
 import { NavLink } from "react-router-dom";
+import '../css/header.css';
 
 const Header = () => {
     return (
         <header>
-            <nav className="Navigator">
-                <NavLink to="/" className="NavLink">Главная</NavLink>
-                <NavLink to="/progress" className="NavLink">Прогресс</NavLink>
-                <NavLink to="/about" className="NavLink">О переводе</NavLink>
-                <NavLink to="/team" className="NavLink">Команда</NavLink>
-                <NavLink to="/feed_back" className="NavLink">Контакты</NavLink>
-                <NavLink to="/version" className="NavLink">Версии</NavLink>
-                <NavLink to="/money" className="NavLink">Донаты</NavLink>
+            <nav className="navigator">
+                <NavLink to="/" className="NavLink"><div className="navigator__item">Главная</div></NavLink>
+                <NavLink to="/progress" className="NavLink"><div className="navigator__item">Прогресс</div></NavLink>
+                <NavLink to="/about" className="NavLink"><div className="navigator__item">О переводе</div></NavLink>
+                <NavLink to="/feed_back" className="NavLink"><div className="navigator__item">Обратная связь</div></NavLink>
+                <NavLink to="/donation" className="NavLink"><div className="navigator__item">Поддержать</div></NavLink>
+                <NavLink to="/version" className="NavLink"><div className="navigator__item">Версии</div></NavLink>
             </nav>
         </header>
     );

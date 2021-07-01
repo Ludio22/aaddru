@@ -1,0 +1,102 @@
+.progress {
+  margin: 4em 0 0 0;
+}
+.progress__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 4em;
+}
+.progress__container img {
+  border: 0.41em solid #777682;
+  -webkit-box-shadow: 1px 0px 1px #000, -1px 0px 2px #000, 0px 1px 1px #000, -1px -1px 8px #000;
+          box-shadow: 1px 0px 1px #000, -1px 0px 2px #000, 0px 1px 1px #000, -1px -1px 8px #000;
+}
+.progress__img_two {
+  display: none;
+}
+.progress__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.progress__info_case-name {
+  font-size: calc(24px + 16 * (100vw / 1280));
+  margin: 0 0 50px 0;
+}
+.progress__info_decription {
+  margin: 6px 0;
+}
+.progress__info_value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.progress__info_value p {
+  margin: 0 0 0 12px;
+}
+.progress__line {
+  height: 11px;
+  width: 512px;
+  border: 3px solid black;
+  border-radius: 32px;
+}
+.progress .line-gradient {
+  background: linear-gradient(45deg, #ff6c27, #05b0db);
+  height: 100%;
+  width: 100%;
+  border-radius: 32px;
+}
+.progress .gradient-filter {
+  height: 100%;
+  -webkit-transform: translateY(-11px);
+          transform: translateY(-11px);
+  float: right;
+  border-radius: 0 12px 12px 0;
+  background-color: #1f1e23;
+}
+
+@media (max-width: 992px) {
+  .progress__container {
+    width: inherit;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .progress__info {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .progress__info_case-name {
+    font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280));
+    margin: 0 0 20px 0;
+  }
+  .progress__info_lines {
+    width: 50%;
+  }
+  .progress__img_one {
+    display: none;
+  }
+  .progress__img_two {
+    width: 65% !important;
+    display: block;
+  }
+}
